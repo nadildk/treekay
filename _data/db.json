@@ -1,0 +1,65 @@
+{
+    "tracks": [
+        {
+            "id": 1,
+            "name": "build a soul beat",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/build_a_soul_beat.wav" 
+        },
+        {
+            "id": 2,
+            "name": "dreamer",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/dreamer.wav" 
+        },        
+        {
+            "id": 3,
+            "name": "man what?",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/man_what.wav" 
+        },        
+        {
+            "id": 4,
+            "name": "shinra tensei",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/shinra_tensei.wav" 
+        },        
+        {
+            "id": 5,
+            "name": "swish",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/swish.wav" 
+        },        
+        {
+            "id": 6,
+            "name": "outside",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/outside.wav" 
+        },        
+        {
+            "id": 7,
+            "name": "unspeakable",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/unspeakable.wav" 
+        },        
+        {
+            "id": 8,
+            "name": "win or lose",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/win_or_lose.wav" 
+        },        
+        {
+            "id": 9,
+            "name": "odyssey",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/odyssey.wav" 
+        },        
+        {
+            "id": 10,
+            "name": "purple skies",
+            "cover": "/public/treekay_cover.png",
+            "src": "public/purple_skies.wav" 
+        }
+    ]
+
+}
