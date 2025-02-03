@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Treekay Player
+Treekay Player is a modern web-based music player designed to stream the new treekay beat tape. This project leverages the latest web technologies to provide a dynamic and visually engaging user experience to stream this project.
 
-## Getting Started
+## Features
 
-First, run the development server:
+- Music Streaming: Stream the new treekay beat tape through this dynamic website!
+- Modern UI: Built with Next.js and React for fast and responsive design.
+- Smooth Animations: Framer Motion integration for stunning UI animations.
+- 3D Graphics: Powered by Three.js for captivating 3D visuals.
+- Email Support: Integrated with EmailJS for user feedback.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js: Server-side rendering and optimized performance.
+- React: Component-based UI development.
+- TypeScript: Strongly typed development environment.
+- Framer Motion: Advanced animation handling.
+- Three.js: 3D rendering and animations.
+- EmailJS: Email service integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
+The project is designed for secure and scalable deployment on **AWS S3**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### AWS Security Best Practices
+#### IAM Roles
+- Configure IAM roles with minimal access permissions.
+- Use separate roles for different services to follow the principle of least privilege.
 
-## Learn More
+#### Python Scripting
+- Automate file uploads to S3.
+- Ensure permission checks for uploaded files.
 
-To learn more about Next.js, take a look at the following resources:
+#### Monitoring with GuardDuty
+- Enable Amazon GuardDuty to monitor for security threats.
+- Receive alerts for unauthorized access or potential vulnerabilities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
