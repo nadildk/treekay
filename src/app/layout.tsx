@@ -3,10 +3,13 @@ import "./globals.css";
 import { Alex_Brush, Montserrat} from "next/font/google"
 import React, { ReactNode } from "react";
 
+// components 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 interface RootLayoutProps {
   children: ReactNode
 }
-
 const alexBrush = Alex_Brush({
   weight: ['400'],
   subsets: ['latin'],
@@ -27,8 +30,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
-      <body className={`${alexBrush.variable} ${montserrat.variable}`}>
+
+      <body className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
