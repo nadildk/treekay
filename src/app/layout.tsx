@@ -1,40 +1,34 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import React from "react";
+import { Alex_Brush, Montserrat} from "next/font/google"
+import React, { ReactNode } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+interface RootLayoutProps {
+  children: ReactNode
+}
+
+const alexBrush = Alex_Brush({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-alexBrush',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const montserrat = Montserrat({
+  weight: [ '100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
-  title: "Treekay Player",
-  description: "A web player for the new Treekay beat tape",
+  title: "treekay player",
+  description: "a audio player streaming the new treekay beat tape",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* Main page content */}
+    <html lang='en'>
+      <body className={`${alexBrush.variable} ${montserrat.variable}`}>
         {children}
-
-        {/* Floating iPhone-sized player icon */}
-        <div className="fixed bottom-8 right-8 w-20 h-20 bg-black rounded-full shadow-lg flex items-center justify-center cursor-pointer">
-          <div className="text-white text-xl font-bold">🎶</div> {/* Add a play icon or something else here */}
-        </div>
       </body>
     </html>
   );
