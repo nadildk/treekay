@@ -2,7 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import {
+  MouseParallaxContainer,
+  MouseParallaxChild,
+} from "react-parallax-mouse";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
@@ -19,14 +22,23 @@ const Hero = () => {
             className="relative flex items-center h-[120px] xl:h-max xl:w-[840px] gap-4"
           >
             {/* typo-1.svg */}
-            <MouseParallaxChild factorX={0.2} factorY={0.4} className="relative">
+            <MouseParallaxChild
+              factorX={0.2}
+              factorY={0.4}
+              className="relative"
+            >
               <motion.div
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 className="w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px]"
               >
-                <Image src={"/typo-1.svg"} fill alt="" className="object-contain" />
+                <Image
+                  src={"/typo-1.svg"}
+                  fill
+                  alt=""
+                  className="object-contain"
+                />
               </motion.div>
             </MouseParallaxChild>
           </MouseParallaxContainer>
