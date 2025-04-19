@@ -11,7 +11,7 @@ import { fadeIn } from "../../variants";
 
 const Hero = () => {
   return (
-    <section className="h-[80vh] xl:h-[850px]" id="home">
+    <section className="h-[80vh] xl:h-[850px] relative" id="home">
       <div className="container mx-auto h-full flex justify-center items-center xl:justify-start">
         {/* text */}
         <div className="h-full flex flex-col justify-center items-center xl:items-start z-20 pt-12">
@@ -44,6 +44,21 @@ const Hero = () => {
           </MouseParallaxContainer>
         </div>
       </div>
+
+      {/* cd.svg */}
+      <motion.div
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        className="hidden xl:block absolute top-[40%] left-[880px] z-10 w-[200px] h-[200px]"
+      >
+        <Image
+          src="/cd.svg"
+          fill
+          alt="cd image"
+          className="object-contain"
+        />
+      </motion.div>
     </section>
   );
 };
