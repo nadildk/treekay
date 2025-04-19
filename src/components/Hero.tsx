@@ -50,6 +50,10 @@ const Hero = () => {
         variants={fadeIn("down", 0.4)}
         initial="hidden"
         whileInView={"show"}
+        whileHover={{
+          rotate: [0, -5, 5, -5, 5, 0],
+          transition: { duration: 0.6 },
+        }}
         className="hidden xl:block absolute top-[40%] left-[880px] z-10 w-[200px] h-[200px]"
       >
         <Image
