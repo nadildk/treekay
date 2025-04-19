@@ -22,15 +22,15 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 The project is designed for secure and scalable deployment on **AWS S3**.
 
 ### AWS Security Best Practices 🔐
-#### IAM Roles
+#### IAM Roles 🔑
 - Configure IAM roles with minimal access permissions.
 - Use separate roles for different services to follow the principle of least privilege.
 
-#### Python Scripting
+#### Python Scripting 🐍
 - Automate file uploads to S3.
 - Ensure permission checks for uploaded files.
 
-#### Monitoring with GuardDuty
+#### Monitoring with GuardDuty 🛡️
 - Enable Amazon GuardDuty to monitor for security threats.
 - Receive alerts for unauthorized access or potential vulnerabilities.
 
