@@ -6,8 +6,6 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 - Music Streaming: Stream the new treekay beat tape through this dynamic website!
 - Modern UI: Built with Next.js and React for fast and responsive design.
 - Smooth Animations: Framer Motion integration for stunning UI animations.
-- 3D Graphics: Powered by Three.js for captivating 3D visuals.
-- Email Support: Integrated with EmailJS for user feedback.
 
 ## Tech Stack 🛠
 
@@ -15,8 +13,6 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 - React: Component-based UI development.
 - TypeScript: Strongly typed development environment.
 - Framer Motion: Advanced animation handling.
-- Three.js: 3D rendering and animations.
-- EmailJS: Email service integration.
 
 ## Deployment 🚀
 The project is designed for secure and scalable deployment on **AWS S3**.
@@ -33,6 +29,3 @@ The project is designed for secure and scalable deployment on **AWS S3**.
 #### Monitoring with GuardDuty 🛡️
 - Enable Amazon GuardDuty to monitor for security threats.
 - Receive alerts for unauthorized access or potential vulnerabilities.
-
-
-
