@@ -84,3 +84,11 @@ body {
 .rap-container .rap-controls span {
     @apply text-[15px];
 }
+
+.rap-volume-btn.rap-volume-open svg path {
+    @apply fill-white;
+}
+
+.rap-volume-controls {
+    @apply !bg-zinc-900;
+}
