@@ -145,7 +145,7 @@ const Hero = () => {
           rotate: [0, -5, 5, -5, 5, 0],
           transition: { duration: 0.6 },
         }}
-        className="hidden xl:block absolute top-[40%] left-[880px] z-10 w-[200px] h-[200px]"
+        className="hidden xl:block absolute top-[40%] left-[70vw] xl:left-[60vw] z-30 w-[200px] h-[200px]"
       >
         <Image src="/cd.svg" fill alt="cd image" className="object-contain" />
       </motion.div>
