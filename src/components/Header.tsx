@@ -4,6 +4,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// components
+import NavMobile from "./NavMobile";
+import Nav from "./Nav";
+
 const Header = () => {
   const [active, setActive] = useState(false);
 
@@ -23,7 +27,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex flex-col xl:flex-row items-center xl:justify-between gap-4">
-        {/* Logo */}
+        {/* logo */}
         <div className="flex justify-center xl:justify-start">
           <Link href="/" className="block">
             <Image
@@ -38,16 +42,16 @@ const Header = () => {
         </div>
 
         {/* nav */}
-        <nav className="hidden xl:flex gap-4">nav</nav>
+        <Nav />
 
         {/* nav mobile */}
-        <nav className="flex xl:hidden">nav mobile</nav>
+        <NavMobile />
 
         {/* menu btn */}
         <div>menu btn</div>
 
         {/* socials */}
-        <div className="flex gap-3">social icons</div>
+        <div>social icons</div>
       </div>
     </header>
   );
