@@ -1,9 +1,56 @@
-import React from 'react'
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  const [active, setActive] = useState(false);
 
-export default Header
+  useEffect(() => {
+    const handleScroll = () => {
+      setActive(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`fixed z-50 w-full transition-all duration-300 ${
+        active ? "bg-[#0c0c0cec] py-6" : "bg-transparent py-8"
+      }`}
+    >
+      <div className="container mx-auto flex flex-col xl:flex-row items-center xl:justify-between gap-4">
+        {/* Logo */}
+        <div className="flex justify-center xl:justify-start">
+          <Link href="/" className="block">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={80}
+              height={80}
+              priority
+              className="object-contain"
+            />
+          </Link>
+        </div>
+
+        {/* nav */}
+        <nav className="hidden xl:flex gap-4">nav</nav>
+
+        {/* nav mobile */}
+        <nav className="flex xl:hidden">nav mobile</nav>
+
+        {/* menu btn */}
+        <div>menu btn</div>
+
+        {/* socials */}
+        <div className="flex gap-3">social icons</div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
