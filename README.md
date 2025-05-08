@@ -15,17 +15,8 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 - Framer Motion: Advanced animation handling.
 
 ## Deployment 🚀
-The project is designed for secure and scalable deployment on **AWS S3**.
+This project is deployed using **GitHub Pages** for fast and reliable static hosting.
 
-### AWS Security Best Practices 🔐
-#### IAM Roles 🔑
-- Configure IAM roles with minimal access permissions.
-- Use separate roles for different services to follow the principle of least privilege.
-
-#### Python Scripting 🐍
-- Automate file uploads to S3.
-- Ensure permission checks for uploaded files.
-
-#### Monitoring with GuardDuty 🛡️
-- Enable Amazon GuardDuty to monitor for security threats.
-- Receive alerts for unauthorized access or potential vulnerabilities.
+### Continuous Deployment (CI/CD) ⚙️
+**GitHub Actions** is used to automate the build and deployment process.  
+Every push to the `main` branch triggers a workflow that builds the project and publishes it to GitHub Pages
