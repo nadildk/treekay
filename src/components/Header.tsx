@@ -42,7 +42,7 @@ const Header = () => {
         </div>
 
         {/* nav */}
-        <Nav />
+        <Nav containerStyles="hidden xl:flex items-center gap-x-32"/>
 
         {/* nav mobile */}
         <NavMobile />
