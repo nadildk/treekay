@@ -16,3 +16,7 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 
 ## Deployment 🚀
 This project is deployed using **GitHub Pages** for fast and reliable static hosting.
+
+### Continuous Deployment (CI/CD) ⚙️
+**GitHub Actions** is used to automate the build and deployment process.  
+Every push to the `main` branch triggers a workflow that builds the project and publishes it to GitHub Pages
