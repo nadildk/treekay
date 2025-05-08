@@ -7,6 +7,7 @@ import Link from "next/link";
 // components
 import NavMobile from "./NavMobile";
 import Nav from "./Nav";
+import MenuBtn from "./MenuBtn";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -48,7 +49,9 @@ const Header = () => {
         <NavMobile />
 
         {/* menu btn */}
-        <div>menu btn</div>
+        <div className="absolute right-7 bg-red-400 top-9 z-10 xl:hidden">
+          <MenuBtn />
+        </div>
 
         {/* socials */}
         <div>social icons</div>
