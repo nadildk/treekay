@@ -8,6 +8,7 @@ import Link from "next/link";
 import NavMobile from "./NavMobile";
 import Nav from "./Nav";
 import MenuBtn from "./MenuBtn";
+import Socials from "./Socials";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -49,12 +50,14 @@ const Header = () => {
         <NavMobile />
 
         {/* menu btn */}
-        <div className="absolute right-7 bg-red-400 top-9 z-10 xl:hidden">
+        <div className="absolute right-7 top-9 z-10 xl:hidden">
           <MenuBtn />
         </div>
 
         {/* socials */}
-        <div>social icons</div>
+        <div>
+          <Socials />
+        </div>
       </div>
     </header>
   );
