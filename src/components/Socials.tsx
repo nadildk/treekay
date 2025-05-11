@@ -7,9 +7,9 @@ import {
 } from "react-icons/ri";
 
 const socials = [
-  { path: '#', icon: RiSoundcloudFill },
-  { path: '#', icon: RiInstagramFill },
-  { path: '#', icon: RiTwitterXFill },
+  { path: 'https://soundcloud.com/treekay/albums', icon: RiSoundcloudFill },
+  { path: 'https://www.instagram.com/treekay.wav/', icon: RiInstagramFill },
+  { path: 'https://x.com/prodbytreekay', icon: RiTwitterXFill },
 ];
 
 type SocialsProps = {

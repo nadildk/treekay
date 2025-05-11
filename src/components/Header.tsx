@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         {/* nav */}
-        <Nav containerStyles="hidden xl:flex items-center gap-x-32"/>
+        <Nav containerStyles="hidden xl:flex items-center gap-x-32" />
 
         {/* nav mobile */}
         <NavMobile />
@@ -56,7 +56,10 @@ const Header = () => {
 
         {/* socials */}
         <div>
-          <Socials />
+          <Socials
+            containerStyles="flex gap-x-4"
+            iconStyles="text-[24px] hover:text-zinc-300 transition-all"
+          />
         </div>
       </div>
     </header>
