@@ -10,16 +10,18 @@ const links = [
 type NavProps = {
   containerStyles?: string;
   linkStyles?: string;
+  onLinkClick?: () => void;
 };
 
-const Nav = ({ containerStyles = "", linkStyles = "" }: NavProps) => {
+const Nav = ({ containerStyles = "", linkStyles = "", onLinkClick }: NavProps) => {
   return (
-    <nav className={`hidden xl:flex gap-4 ${containerStyles}`}>
+    <nav className={`${containerStyles}`}>
       {links.map((link, index) => (
         <Link
           key={index}
           href={`/${link.path}`}
           className={`cursor-pointer border-b-2 border-transparent hover:border-white/70 hover:text-white/80 transition-all duration-200 ${linkStyles}`}
+          onClick={onLinkClick} 
         >
           {link.name}
         </Link>
