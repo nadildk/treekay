@@ -26,7 +26,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "treekay producer page",
+  title: "treekay",
   description: "a modern music producer website for viewing treekay's latest projects",
 };
 
