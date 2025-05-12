@@ -8,16 +8,13 @@ import React, {
   SetStateAction,
 } from "react";
 
-// Define the context type
 type NavContextType = {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-// Create context
 export const NavContext = createContext<NavContextType | undefined>(undefined);
 
-// Custom hook for safe context access
 export const useNavContext = () => {
   const context = useContext(NavContext);
   if (!context) {
@@ -26,7 +23,6 @@ export const useNavContext = () => {
   return context;
 };
 
-// Provider component
 export const NavContextProvider = ({ children }: { children: ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
 

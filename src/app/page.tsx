@@ -3,6 +3,7 @@ import "./globals.css";
 import Hero from "@/components/Hero";
 import Player from "@/components/Player";
 import AlbumSwiper from "@/components/AlbumSwiper";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Hero/>
       <Player/>
       <AlbumSwiper />
-      <div className="h-[500px]"></div>
+      <Contact />
+      <div className="h-[50px]"></div>
     </main>
   );
 }

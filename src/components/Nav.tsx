@@ -1,10 +1,12 @@
+// nav.tsx
+
 import Link from "next/link";
 import React from "react";
 
 const links = [
   { path: "", name: "Home" },
   { path: "#projects", name: "Projects" },
-  { path: "contact", name: "Contact" },
+  { path: "#contact", name: "Contact" },
 ];
 
 type NavProps = {
@@ -21,7 +23,7 @@ const Nav = ({ containerStyles = "", linkStyles = "", onLinkClick }: NavProps) =
           key={index}
           href={`/${link.path}`}
           className={`cursor-pointer border-b-2 border-transparent hover:border-white/70 hover:text-white/80 transition-all duration-200 ${linkStyles}`}
-          onClick={onLinkClick} 
+          onClick={onLinkClick}
         >
           {link.name}
         </Link>

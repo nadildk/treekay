@@ -38,7 +38,7 @@ const AlbumSwiper = () => {
     >
       <h2 className="text-4xl font-bold text-center mb-10">projects</h2>
       <p className="text-lg text-center text-gray-400 mb-8">
-        swipe to explore projects
+        swipe to explore!
       </p>
       <Swiper spaceBetween={30} slidesPerView={1} loop className="rounded-xl shadow-xl max-w-3xl mx-auto">
         {albums.map((album, index) => (
@@ -52,7 +52,7 @@ const AlbumSwiper = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-semibold flex justify-between items-center">
                   {album.title}
-                  {/* Direct Link */}
+                  {/* direct link */}
                   <a
                     href={album.playlistUrl}
                     target="_blank"
@@ -64,7 +64,7 @@ const AlbumSwiper = () => {
                 </h3>
                 <span className="text-gray-400">{album.year}</span>
 
-                {/* Embedded Player */}
+                {/* embedded player */}
                 <div className="mt-6">
                   <iframe
                     width="100%"
