@@ -19,12 +19,12 @@ const Hero = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
 
   // timing configuration
-  const typingSpeed = 100; 
-  const backspaceSpeed = 100; 
-  const waitBeforeBackspace = 5000; 
-  const waitAfterBackspace = 2000; 
+  const typingSpeed = 100;
+  const backspaceSpeed = 100;
+  const waitBeforeBackspace = 5000;
+  const waitAfterBackspace = 2000;
 
-  // typing and backspacing 
+  // typing and backspacing
   useEffect(() => {
     let interval: NodeJS.Timeout;
 

@@ -3,13 +3,13 @@ import Link from "next/link";
 import {
   RiSoundcloudFill,
   RiInstagramFill,
-  RiTwitterXFill
+  RiTwitterXFill,
 } from "react-icons/ri";
 
 const socials = [
-  { path: 'https://soundcloud.com/treekay/albums', icon: RiSoundcloudFill },
-  { path: 'https://www.instagram.com/treekay.wav/', icon: RiInstagramFill },
-  { path: 'https://x.com/prodbytreekay', icon: RiTwitterXFill },
+  { path: "https://soundcloud.com/treekay/albums", icon: RiSoundcloudFill },
+  { path: "https://www.instagram.com/treekay.wav/", icon: RiInstagramFill },
+  { path: "https://x.com/prodbytreekay", icon: RiTwitterXFill },
 ];
 
 type SocialsProps = {

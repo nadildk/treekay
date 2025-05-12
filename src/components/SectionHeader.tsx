@@ -36,4 +36,3 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ pretitle, title }) => {
 };
 
 export default SectionHeader;
-

@@ -1,5 +1,3 @@
-// nav.tsx
-
 import Link from "next/link";
 import React from "react";
 
@@ -15,7 +13,11 @@ type NavProps = {
   onLinkClick?: () => void;
 };
 
-const Nav = ({ containerStyles = "", linkStyles = "", onLinkClick }: NavProps) => {
+const Nav = ({
+  containerStyles = "",
+  linkStyles = "",
+  onLinkClick,
+}: NavProps) => {
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => (

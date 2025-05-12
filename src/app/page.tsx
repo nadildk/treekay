@@ -8,11 +8,10 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <Player/>
+      <Hero />
+      <Player />
       <AlbumSwiper />
       <Contact />
-      <div className="h-[50px]"></div>
     </main>
   );
 }

@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -16,8 +18,8 @@ const Contact = () => {
 
     try {
       const result = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID!, 
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!, 
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
         {
           from_name: name,
           from_email: email,
@@ -35,11 +37,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-20 pb-32 bg-black text-white">
+    <motion.section
+      id="contact"
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      className="pt-20 pb-32 bg-black text-white"
+    >
       <h2 className="text-4xl font-bold text-center mb-10">contact</h2>
       <p className="text-center text-lg text-gray-400 mb-6">reach out below!</p>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        {" "}
+        {/* Add padding on small screens */}
         {isSent ? (
           <div className="text-center text-green-500">
             <p>Your message has been sent successfully!</p>
@@ -91,7 +101,7 @@ const Contact = () => {
               />
             </div>
 
-            <button
+            <motion.button
               type="submit"
               className={`w-full py-3 bg-green-500 text-white font-medium rounded-full ${
                 isSending ? "opacity-50 cursor-not-allowed" : ""
@@ -99,11 +109,11 @@ const Contact = () => {
               disabled={isSending}
             >
               {isSending ? "Sending..." : "Send Message"}
-            </button>
+            </motion.button>
           </form>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
