@@ -1,5 +1,5 @@
-## Treekay Player 💿
-Treekay Player is a modern interactive hub built to showcase beats, projects, and connect with collaborators or clients. This project is designed for a music industry professional, blending sharp visuals and smooth functionality to highlight the producer's work.
+## Treekay Producer Page 💿
+This is a modern interactive hub built to showcase beats, projects, and connect with collaborators or clients. This project is designed for a music industry professional, blending sharp visuals and smooth functionality to highlight the producer's work.
 
 ## Features ✨
 
