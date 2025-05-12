@@ -10,9 +10,10 @@ Treekay Player is a modern web-based music player designed to stream the new tre
 ## Tech Stack 🛠
 
 - Next.js: Server-side rendering and optimized performance.
+- Node.js: Server-side features and tooling.
 - React: Component-based UI development.
 - TypeScript: Strongly typed development environment.
-- Framer Motion: Advanced animation handling.
+- Framer Motion & Swiper: Advanced animation handling.
 
 ## Deployment 🚀
 
