@@ -1,20 +1,23 @@
 ## Treekay Player 💿
-Treekay Player is a modern web-based music player designed to stream the new treekay beat tape. This project leverages the latest web technologies to provide a dynamic and visually engaging user experience to stream this project.
+Treekay Player is a modern interactive hub built to showcase beats, projects, and connect with collaborators or clients. This project is designed for a music industry professional, blending sharp visuals and smooth functionality to highlight the producer's work.
 
 ## Features ✨
 
-- Music Streaming: Stream the new treekay beat tape through this dynamic website!
-- Modern UI: Built with Next.js and React for fast and responsive design.
-- Smooth Animations: Framer Motion integration for stunning UI animations.
+- Project Showcase: Browse and stream Treekay's latest beat tapes with an immersive experience.
+- Responsive Design: Built with Next.js, React, and Tailwind CSS for fast performance and a polished UI across all screens.
+- Smooth Animations: Framer Motion and Swiper integration for stunning UI animations and transitions
+- Built-in Contact Form: Easy to contact to get in touch for inquiries using EmailJS
 
 ## Tech Stack 🛠
 
-- Next.js: Server-side rendering and optimized performance.
-- Node.js: Server-side features and tooling.
-- React: Component-based UI development.
-- TypeScript: Strongly typed development environment.
-- Framer Motion & Swiper: Advanced animation handling.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- EmailJS
 
-## Deployment 🚀
+## Updates 🔄
 
-This project is deployed using **Vercel** for fast and reliable static hosting.
+- Initial deployment, first release (12/05/2025)
