@@ -26,8 +26,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "treekay player",
-  description: "a audio player streaming the new treekay beat tape",
+  title: "treekay producer page",
+  description: "a modern music producer website for viewing treekay's latest projects",
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
