@@ -31,10 +31,10 @@ const AlbumSwiper = () => {
   return (
     <motion.section
       id="projects"
+      className="scroll-mt-32 pt-28 pb-32 bg-black text-white px-4 sm:px-6"
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
-      className="pt-28 pb-32 bg-black text-white px-4 sm:px-6"
     >
       <h2 className="text-4xl font-bold text-center mb-10">projects</h2>
       <p className="text-lg text-center text-gray-400 mb-8">

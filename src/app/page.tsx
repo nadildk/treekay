@@ -12,6 +12,7 @@ export default function Home() {
       <Player />
       <AlbumSwiper />
       <Contact />
+      <div className="h-32" />
     </main>
   );
 }
