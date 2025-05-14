@@ -21,3 +21,4 @@ This is a modern interactive hub built to showcase beats, projects, and connect 
 ## Updates 🔄
 
 - Initial deployment, first release (12/05/2025)
+- Resolved issue with contact form email functionality (14/05/2025)
