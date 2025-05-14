@@ -15,19 +15,19 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSending(true);
-
     try {
       const result = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
         {
-          from_name: name,
-          from_email: email,
+          name: name,
+          email: email,
           message: message,
         },
-        process.env.REACT_APP_EMAILJS_USER_ID!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""
       );
-      console.log(result.text);
+
+      console.log("Email sent result:", result.text);
       setIsSent(true);
     } catch (error) {
       console.error("Error sending email:", error);
